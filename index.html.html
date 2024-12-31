@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
     <style>
+                /* 设置背景颜色为淡黄色，营造温暖氛围 */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f0f8ff;
-            color: #333;
-        }
+            background-color: #fff5e6; /* 浅黄色背景 */
+            color: #333;* 默认文字颜色 */
+      }
+
+         /* 标题设置为喜庆的红色 */
         h1 {
-            color: #0066cc;
+            color: #ff4500; /* 鲜红色 */
         }
-        p {
-            font-size: 18px;
+
+         /* 第一段文字设置为金色 */
+     p:first-of-type {
+           color: #ffd700; /* 金色 */
         }
-    </style>
+
+        /* 第二段文字设置为绿色，表示希望与新年气氛 */
+        p:nth-of-type(2) {
+            color: #32cd32; /* 绿色 */
+        }
+
+        /* 第三段文字（新年祝福）设置为紫色 */
+        p:nth-of-type(3) {
+            color: #800080; /* 紫色 */
+            font-weight: bold; /* 加粗 */
+        }
+
+        /* 音频播放器下方提示信息的颜色 */
+        audio {
+            margin-top: 20px;
+        }
+        </style>
 </head>
 <body>
     <h1>Hello, World!</h1>
@@ -34,7 +55,5 @@
         <source src="newyear.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-</body>
-</html>
 </body>
 </html>
